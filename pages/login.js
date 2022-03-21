@@ -2,7 +2,7 @@ import { List, ListItem, Typography, TextField, Button, Link } from '@material-u
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import NextLink from 'next/link'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Layout from '../components/Layout'
 import { Store } from '../utils/Store'
 import useStyles from '../utils/styles'
@@ -107,7 +107,7 @@ export default function Login() {
             </Button>
           </ListItem>
           <ListItem>
-            Don't have an account? &nbsp;
+            Don&nbsp;t have an account? &nbsp;
             <NextLink href={`/register?redirect=${redirect || '/'}`} passHref>
               <Link>Register</Link>
             </NextLink>
